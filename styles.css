@@ -1,0 +1,118 @@
+* {
+    font-family: 'Strait', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, label, input {
+    color: #ffffff;
+}
+
+.welcome-section {
+    height: 100vh;
+    position: relative;
+}
+
+.fit-in-sec {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.background-img {
+    object-fit: cover;
+    filter: brightness(.7) contrast(.8);
+}
+
+.text-content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-heading {
+    font-size: 5rem;
+    letter-spacing: .2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.email-form {
+    display: grid;
+    grid-template: auto / auto;
+    gap: 1.2rem;
+}
+
+.email-form[form-submitted] {
+    display: none;
+}
+
+.email-form > * {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.email-form input {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid #ffffff;
+    padding: .6rem 1rem;
+    transition: .2s;
+}
+
+.email-form input::placeholder {
+    color: #dddddd;
+}
+
+.email-form input:focus {
+    background: rgb(255, 255, 255);
+    color: #00701F;
+    outline: none;
+}
+
+.email-form input:focus::placeholder {
+    color: #888888;
+}
+
+.email-form button {
+    width: auto;
+    margin: 1rem auto 0 auto;
+    color: #00701F;
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 16px;
+    padding: .5rem 2.5rem;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.email-form button:hover, .email-form button:focus {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.form-confirmation {
+    display: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.form-confirmation[form-submitted] {
+    display: initial;
+}
+
+footer {
+    height: 20vh;
+    background: rgb(91, 128, 97);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 2rem;
+}
